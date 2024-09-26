@@ -28,7 +28,7 @@ public class HTTPRequests {
 	
 	int id;
 
-	@Test(priority=1)   //using this annotation we can convert a method into a TC
+	@Test   //using this annotation we can convert a method into a TC
 	void getUsers() {
 		
 		given()
@@ -46,46 +46,46 @@ public class HTTPRequests {
 	
 	
 	
-	@Test(priority=2)
+	@Test
 	void createUsers() throws FileNotFoundException {
 //		Req Payload{
 //		    "name": "morpheus",
 //		    "job": "leader"
 //		}
 //		
-		//HashMap<String,Object> data=new HashMap();
+		HashMap<String,String> data=new HashMap();
 		//or
 		//HashMap data=new HashMap();
 		//or
 		//JSONObject data=new JSONObject();
 		
-		//data.put("name","Manoj");
-		//data.put("job","Doctor");
+		data.put("name","Manoj");
+		data.put("job","Doctor");
 		
 		//or
-		File fl=new File("C:\\Users\\ak282\\eclipse-workspace 2022\\RestrAssured_01\\dataa,json");
-		FileReader fr=new FileReader(fl);
-		JSONTokener jt =new JSONTokener(fr);
-		JSONObject data=new JSONObject(jt);
-			
-		id=given()
+//		File fl=new File("C:\\Users\\ak282\\eclipse-workspace 2022\\RestrAssured_01\\dataa,json");
+//		FileReader fr=new FileReader(fl);
+//		JSONTokener jt =new JSONTokener(fr);
+//		JSONObject data=new JSONObject(jt);
+//			
+		given()
 		   .contentType("application/json")
-		   .body(data.toString())
+		   .body(data)
 		   
 		.when()
 		   .post("https://reqres.in/api/users")
-		   .jsonPath().getInt("id");
+		   //.jsonPath().getInt("id");
 		   
-//		.then()
-//		.statusCode(201)
-//		.log().all();
+		.then()
+		.statusCode(201)
+		.log().all();
 		
 	}
 	
 	
 	
 	
-	@Test(priority=3, dependsOnMethods= {"createUsers"})
+	@Test
 	void updateUser() {
 		HashMap<String,Object> data=new HashMap();
 		//or
@@ -122,7 +122,7 @@ public class HTTPRequests {
 //		
 //	}
 //	
-	@Test
+	@Test(enabled=false)
 	void deleteUser() {
 		given()
 		

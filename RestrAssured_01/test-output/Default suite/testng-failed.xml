@@ -5,7 +5,6 @@
     <classes>
       <class name="test_01.HTTPRequests">
         <methods>
-          <include name="createUsers"/>
           <include name="updateUser"/>
         </methods>
       </class> <!-- test_01.HTTPRequests -->

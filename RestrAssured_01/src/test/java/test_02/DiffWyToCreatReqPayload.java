@@ -47,6 +47,7 @@ public class DiffWyToCreatReqPayload {
 		   
 		.then()
 		.statusCode(201)
+	//	.body("page",equalTo(2))
 	   .log().all();
 		
 	}

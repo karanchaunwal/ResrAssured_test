@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-08T22:03:02 IST" name="Default suite" finished-at="2024-05-08T22:03:08 IST" duration-ms="5654">
+  <suite started-at="2024-09-24T11:07:18 IST" name="Default suite" finished-at="2024-09-24T11:07:23 IST" duration-ms="5613">
     <groups>
     </groups>
-    <test started-at="2024-05-08T22:03:02 IST" name="Default test" finished-at="2024-05-08T22:03:08 IST" duration-ms="5654">
+    <test started-at="2024-09-24T11:07:18 IST" name="Default test" finished-at="2024-09-24T11:07:23 IST" duration-ms="5613">
       <class name="test_01.HTTPRequests">
-        <test-method signature="deleteUser()[pri:0, instance:test_01.HTTPRequests@478190fc]" started-at="2024-05-08T22:03:02 IST" name="deleteUser" finished-at="2024-05-08T22:03:05 IST" duration-ms="3082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-        <test-method signature="getUsers()[pri:1, instance:test_01.HTTPRequests@478190fc]" started-at="2024-05-08T22:03:05 IST" name="getUsers" finished-at="2024-05-08T22:03:06 IST" duration-ms="1041" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUsers -->
-        <test-method signature="createUsers()[pri:2, instance:test_01.HTTPRequests@478190fc]" started-at="2024-05-08T22:03:06 IST" name="createUsers" finished-at="2024-05-08T22:03:07 IST" duration-ms="519" status="PASS">
+        <test-method signature="createUsers()[pri:0, instance:test_01.HTTPRequests@399f45b1]" started-at="2024-09-24T11:07:18 IST" name="createUsers" finished-at="2024-09-24T11:07:22 IST" duration-ms="4023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUsers -->
-        <test-method signature="updateUser()[pri:3, instance:test_01.HTTPRequests@478190fc]" started-at="2024-05-08T22:03:07 IST" name="updateUser" finished-at="2024-05-08T22:03:08 IST" depends-on-methods="test_01.HTTPRequests.createUsers" duration-ms="921" status="PASS">
+        <test-method signature="getUsers()[pri:0, instance:test_01.HTTPRequests@399f45b1]" started-at="2024-09-24T11:07:22 IST" name="getUsers" finished-at="2024-09-24T11:07:23 IST" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsers -->
+        <test-method signature="updateUser()[pri:0, instance:test_01.HTTPRequests@399f45b1]" started-at="2024-09-24T11:07:23 IST" name="updateUser" finished-at="2024-09-24T11:07:23 IST" duration-ms="480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUser -->
